@@ -1,0 +1,322 @@
+/* Variáveis de Cores (Paleta Profissional e de Confiança) */
+:root {
+    --cor-principal: #007bff; /* Azul vibrante (Confiança e Tecnologia) */
+    --cor-secundaria: #28a745; /* Verde (Crescimento e Resultado) */
+    --cor-fundo: #f8f9fa; /* Fundo leve */
+    --cor-texto: #343a40;
+    --cor-branco: #ffffff;
+}
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-texto);
+    line-height: 1.6;
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ------------------- HEADER E NAVEGAÇÃO ------------------- */
+header {
+    background-color: var(--cor-branco);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-principal);
+}
+
+.btn-cta-nav {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco) !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-cta-nav:hover {
+    background-color: #218838; /* Tonalidade mais escura do verde */
+}
+
+/* ------------------- BOTÕES PRINCIPAIS (CTA) ------------------- */
+.btn-cta {
+    display: inline-block;
+    background-color: var(--cor-principal);
+    color: var(--cor-branco) !important;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-cta:hover {
+    background-color: #0056b3; /* Tonalidade mais escura do azul */
+    transform: scale(1.02);
+}
+
+.btn-cta-sec {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco) !important;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-cta-sec:hover {
+    background-color: #218838;
+}
+
+/* ------------------- 1. HERO SECTION ------------------- */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('fundo-hero.jpg') no-repeat center center/cover;
+    color: var(--cor-branco);
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.destaque-local {
+    color: var(--cor-secundaria);
+}
+
+/* ------------------- 2. SERVIÇOS ------------------- */
+.servicos {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.servicos h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--cor-principal);
+}
+
+.subtitulo-servicos {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.servicos-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--cor-branco);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    color: var(--cor-principal);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* ------------------- 3. CTA SECUNDÁRIA/CASES ------------------- */
+.cta-secundaria {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cta-secundaria h4 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.depoimento {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 20px auto;
+    font-style: italic;
+}
+
+.depoimento span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/* ------------------- 4. CONTATO E AGENDAMENTO ------------------- */
+.contato {
+    padding: 80px 0;
+    background-color: var(--cor-branco);
+    text-align: center;
+}
+
+.contato h3 {
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+}
+
+.contato p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+#form-contato {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#form-contato input,
+#form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#form-contato textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contato-info h4 {
+    color: var(--cor-principal);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contato-info p {
+    margin: 5px 0;
+}
+
+.mensagem-sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ------------------- FOOTER ------------------- */
+footer {
+    background-color: var(--cor-texto);
+    color: #b8c4ce;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ------------------- RESPONSIVIDADE ------------------- */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        display: block;
+        padding: 5px 0;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .servicos-grid {
+        flex-direction: column;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .btn-cta {
+        width: 100%;
+    }
+}
